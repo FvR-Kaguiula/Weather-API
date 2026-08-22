@@ -38,16 +38,16 @@ async def password(ctx):
 #Enviar un meme (imagen)
 @bot.command()
 async def meme(ctx):
-    with open("C:/Users/Jose Antonio/OneDrive/Escritorio/Python Proyects/3713/M1L3/images/mem1.jpg", "rb") as f:
+    with open("Directory_example") as f:
         picture = discord.File(f)
     await ctx.send(file=picture)
 
 #Enviar un meme aleatorio (imagen)
 @bot.command()
 async def meme_aleatorio(ctx):
-    mem_alet = random.choice(os.listdir("C:/Users/Jose Antonio/OneDrive/Escritorio/Python Proyects/3713/M1L3/images"))
+    mem_alet = random.choice(os.listdir("Directory_example"))
 
-    with open(f"C:/Users/Jose Antonio/OneDrive/Escritorio/Python Proyects/3713/M1L3/images/{mem_alet}", "rb") as f:
+    with open(f"Directory_example{mem_alet}", "rb") as f:
         picture = discord.File(f)
     await ctx.send (file=picture)
 
