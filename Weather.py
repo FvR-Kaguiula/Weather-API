@@ -2,10 +2,10 @@ import requests
 
 url = "https://weatherbit-v1-mashape.p.rapidapi.com/current"
 
-querystring = {"lon":"38.5","lat":"-78.5","units":"imperial","lang":"en"}
+querystring = {"EXAMPLECOORDS"}
 
 headers = {
-	"x-rapidapi-key": "dd44b94613msh2c82005f6597c3fp17fafcjsnf6fe00f40a2c",
+	"x-rapidapi-key": "EXAMPLEAPIACCESS",
 	"x-rapidapi-host": "weatherbit-v1-mashape.p.rapidapi.com"
 }
 
